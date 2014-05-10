@@ -45,7 +45,8 @@ To stop the executor that is waiting on the queue, call stop-work-queue!
 
     (stop-work-queue! q)
 
-For more information on durable
+For more information on Factual's durable-queue, see [here] (https://github.com/Factual/durable-queue).
+
 ## License
 
 Copyright © 2014 Bill Robertson
