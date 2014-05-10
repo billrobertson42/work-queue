@@ -45,9 +45,11 @@ To stop the executor that is waiting on the queue, call stop-work-queue!
 
     (stop-work-queue! q)
 
+For more information on durable
 ## License
 
 Copyright © 2014 Bill Robertson
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
+
