@@ -55,9 +55,7 @@
             (catch Exception x
               (.printStackTrace x)
               (if (retries task-data)
-                (submit! work-queue task-type (retries-- task-data))
-                (if-let [error-handler (:error-handler submitted)]
-                  (error-handler submitted))))
+                (submit! work-queue task-type (retries-- task-data))))
             (finally 
               (dq/complete! task)))))
       (catch Exception x (.printStackTrace x))
